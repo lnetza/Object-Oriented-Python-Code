@@ -78,6 +78,12 @@ while True:  # play multiple games
         currentCardValue = nextCardValue
         currentCardSuit = nextCardSuit
 
+        if score <= 0:
+            print("¡You lost!")
+            score = 50
+            break
+
+
     goAgain = input('To play again, press ENTER, or "q" to quit: ')
     if goAgain == 'q':
         break
